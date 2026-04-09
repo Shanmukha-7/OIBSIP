@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  width: 340px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.input-group {
+  margin: 15px 0;
+}
+
+label {
+  font-size: 14px;
+  color: gray;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swap {
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #667eea;
+  color: white;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin: 5px 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* 🌙 Dark Mode */
+.dark {
+  background: #111;
+}
+
+.dark .container {
+  background: #222;
+  color: white;
+}
+
+.dark input, .dark select {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark .result-box {
+  background: #333;
+}
